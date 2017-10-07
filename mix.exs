@@ -20,7 +20,7 @@ defmodule BlogElixir.Mixfile do
   def application do
     [
       mod: {BlogElixir.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :coherence]
     ]
   end
 
@@ -40,6 +40,8 @@ defmodule BlogElixir.Mixfile do
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
+      {:phoenix_slime, "~> 0.8.0"},
+      {:coherence, "~> 0.4"},
       {:cowboy, "~> 1.0"}
     ]
   end
