@@ -37,7 +37,8 @@ config :blog_elixir, BlogElixirWeb.Endpoint,
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/blog_elixir_web/views/.*(ex)$},
-      ~r{lib/blog_elixir_web/templates/.*(eex)$}
+      ~r{lib/blog_elixir_web/templates/.*(eex)$},
+      ~r{lib/blog_elixir_web/templates/.*(eex|slim|slime)$}
     ]
   ]
 
